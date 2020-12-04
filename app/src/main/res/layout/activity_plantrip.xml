@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".plantrip">
+    <ImageView
+        android:src="@drawable/slide5"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ImageView>
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+
+        >
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+
+                android:textColor="@color/blackcolor"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tripname"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/tripName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tripnamehint"
+                android:importantForAutofill="no"
+                tools:ignore="TextFields" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blackcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sdate"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/startdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choosedate"
+                android:background="@drawable/buttonround"
+                android:textColor="@color/whitecolor"
+                >
+
+            </Button>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blackcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edate"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/enddate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choosedate"
+                android:background="@drawable/buttonround"
+                android:textColor="@color/whitecolor"
+                >
+
+            </Button>
+
+            <TextView
+                android:textColor="@color/blackcolor"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place"
+                android:textSize="18sp"/>
+            <AutoCompleteTextView
+                android:id="@+id/tripLocation"
+                android:hint="@string/placehint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:gravity="top"
+                />
+
+            <Button
+                android:onClick="generateTrip"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/generate"
+                android:background="@color/colorAccent"
+                android:textColor="@color/whitecolor"
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+   <include layout="@layout/bottomlayer">
+
+   </include>
+
+</LinearLayout>

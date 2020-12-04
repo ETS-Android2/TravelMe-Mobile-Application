@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">TravelME</string>
+    <string name="welcome">Welcome TravelME</string>
+    <string name="niceto">Nice to see you again..</string>
+    <string name="emailHint">example@john.com</string>
+    <string name="pHint">Password</string>
+    <string name="Login">LOGIN</string>
+    <string name="forgetPassword">FORGOT PASSWORD?</string>
+    <string name="Or">OR</string>
+    <string name="register">Don’t have an account?</string>
+    <string name="signup">Sign up</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="Hasintha">Hasintha</string>
+    <string name="tripname">Trip Name:</string>
+    <string name="tripnamehint">Type Trip Name:</string>
+    <string name="place">Where is the location:</string>
+    <string name="sdate">Start date of trip:</string>
+    <string name="edate">End date of trip:</string>
+    <string name="choosedate">Choose Date?</string>
+    <string name="generate">Genearate Trip</string>
+    <string name="placehint">Select the location:</string>
+    <string name="reviews">Comments:</string>
+
+    <string name="drop_your_comments">Drop Your comments</string>
+    <string name="user_challenge">User Challenge</string>
+    <string name="google_map">Google Map</string>
+    <string name="find_place">Find the places</string>
+    <string name="searchplace">Visit Places</string>
+    <string name="visitplace">Find the best places</string>
+    <string name="news">News Feed</string>
+    <string name="latenews">Find articles about places</string>
+    <string name="updatep">Update Info </string>
+    <string name="updatepd">Change your details</string>
+    <string name="travel">Plan Tour</string>
+    <string name="traveld">Make happy and easier trip</string>
+
+    <string name="anuradhapura">Anuradhapura</string>
+    <string name="re">8.9</string>
+
+    <string name="write_your_rev">Write Your Comment;</string>
+
+    <string name="triphistory">History of Tours</string>
+
+
+</resources>

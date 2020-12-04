@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/slide7"
+        android:duration="3000"/>
+
+
+    <item
+        android:drawable="@drawable/slide1"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/slide2"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/slide3"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/slide4"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/slide5"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/slide6"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/slide7"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/slide8"
+        android:duration="3000"/>
+
+</animation-list>

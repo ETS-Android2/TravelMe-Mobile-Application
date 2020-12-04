@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/myplantrip"
+        android:title="My Trips"
+        android:icon="@drawable/mytravel" />
+
+    <item
+        android:id="@+id/popularplace"
+        android:title="Popular Places"
+        android:icon="@drawable/popularplaces"/>
+
+    <item
+        android:id="@+id/searchplaces"
+        android:title="Search Place"
+        android:icon="@drawable/searchplace"/>
+
+    <item
+        android:id="@+id/hotles"
+        android:title="Hotels"
+        android:icon="@drawable/hotels"/>
+
+    <item
+        android:id="@+id/images"
+        android:title="Photos"
+        android:icon="@drawable/photos"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout"/>
+</menu>

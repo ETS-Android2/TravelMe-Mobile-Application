@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:text="Note:"
+            android:padding="10dp"/>
+
+        <EditText
+
+            android:padding="10dp"
+            android:id="@+id/dtripnote"
+            android:textColor="@color/blackcolor"
+            android:background="@drawable/roundborderforpop"
+            android:textSize="15sp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:maxLength="5000"
+            android:hint="Type Your Comments.........."
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginBottom="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:text="Places:"
+                android:padding="10dp"/>
+            <AutoCompleteTextView
+                android:id="@+id/visistedplaces"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="80dp"/>
+
+
+
+            <Button
+                android:id="@+id/visistedplacesbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="ADD"
+                android:textColor="@color/whitecolor"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/buttonaddtripplaces"/>
+            <ListView
+                android:id="@+id/visistedplaceslist"
+                android:layout_below="@+id/visistedplaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

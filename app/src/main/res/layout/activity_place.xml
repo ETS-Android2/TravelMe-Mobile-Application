@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPrimary"
+    tools:context=".placeActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/searchbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </com.miguelcatalan.materialsearchview.MaterialSearchView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/searchbar2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <GridLayout
+                android:alignmentMode="alignMargins"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:columnCount="2"
+                android:rowCount="6">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:id="@+id/anura"
+                        android:onClick="viewPlcae"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/anuradhapura">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Anuradhapura"
+                            android:gravity="center"
+
+                            />
+
+                    </LinearLayout>
+                    
+                    
+                    
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:onClick="viewPlcae"
+                        android:id="@+id/badulla"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/badulla">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Badulla"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:onClick="viewPlcae"
+                        android:id="@+id/colombo"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/colombo">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Colombo"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:id="@+id/galle"
+                        android:onClick="viewPlcae"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/galle">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Galle"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:id="@+id/hambantota"
+                        android:onClick="viewPlcae"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/hambantota">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hambantota"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:id="@+id/kandy"
+                        android:onClick="viewPlcae"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/kandy">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kandy"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:onClick="viewPlcae"
+                        android:id="@+id/matara"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/matara">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Matara"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:onClick="viewPlcae"
+                        android:id="@+id/nuwaraeliya"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/nuwaraeliya">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nuwara-eliya"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:onClick="viewPlcae"
+                        android:id="@+id/kalutara"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/kalutara">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kaluthara"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:id="@+id/kurunagal"
+                        android:onClick="viewPlcae"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/kurunagala">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kurunegala"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:onClick="viewPlcae"
+                        android:id="@+id/polon"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/polonnaruwa">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Polonnaruwa"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:id="@+id/rathnapura"
+                        android:onClick="viewPlcae"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/rathnapura">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rathnapura"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </GridLayout>
+
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

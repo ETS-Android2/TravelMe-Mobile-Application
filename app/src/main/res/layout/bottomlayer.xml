@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bottomlayer"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="2dp">
+        <LinearLayout
+            android:paddingTop="3dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:onClick="images"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/roundicon"
+                    android:padding="8dp"
+                    android:src="@drawable/blueicon"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Photos"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="12sp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="hotelplaces"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:background="@drawable/greenicon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/whitehotelicon"
+                    android:padding="8dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hotels"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="myplan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:padding="7dp"
+                    android:src="@drawable/mytripwhite"
+                    android:background="@drawable/greenround"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Trips"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:onClick="showplaces"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:padding="7dp"
+                    android:src="@drawable/placewhite"
+                    android:background="@drawable/redround"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Places"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:onClick="homeclick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:padding="7dp"
+                    android:src="@drawable/homeicon"
+                    android:background="@drawable/greenicon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

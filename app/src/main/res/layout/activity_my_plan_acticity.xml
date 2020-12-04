@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPlanActicity">
+
+
+    <TextView
+        android:id="@+id/lbltrip"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/whitecolor"
+        android:text="@string/triphistory"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <ImageView
+        android:layout_margin="5dp"
+        android:id="@+id/refresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_refresh_24"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round_bg"
+        />
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/lbltrip"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="2dp"
+            android:id="@+id/trpHistorylist"
+            android:dividerHeight="2dp"
+            android:padding="5dp"
+            android:divider="@color/whitecolor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/addnewtour"
+        android:src="@drawable/addtour"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"/>
+
+
+
+</RelativeLayout>
