@@ -46,7 +46,7 @@ public class ChallengePOSTActivity extends AppCompatActivity implements Response
         final String cusername=preferences.getString("username", "guest");
 
         RequestQueue queue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/challenge/insert.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/challenge/insert.php";
 
         StringRequest request=new StringRequest(Request.Method.POST,url,this,this){
             protected Map<String, String> getParams() {

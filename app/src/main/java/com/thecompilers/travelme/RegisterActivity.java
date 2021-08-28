@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity implements Response.List
         final String password=passwordField.getText().toString();
 
         RequestQueue queue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/registeruser/insert.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/registeruser/insert.php";
 
         StringRequest  request=new StringRequest(Request.Method.POST,url,this,this){
             protected Map<String, String> getParams() {

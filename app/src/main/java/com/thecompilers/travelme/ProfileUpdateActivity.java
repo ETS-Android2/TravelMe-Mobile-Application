@@ -165,7 +165,7 @@ public class ProfileUpdateActivity extends AppCompatActivity implements Response
         System.out.println("uploadImage");
         final String _id=id;
         RequestQueue queue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/registeruser/updatep.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/registeruser/updatep.php";
 
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -213,7 +213,7 @@ public class ProfileUpdateActivity extends AppCompatActivity implements Response
     public void setProfile(String email){
         System.out.println(email+"this");
         RequestQueue requestQueue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/registeruser/index2.php?email="+email+" ";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/registeruser/index2.php?email="+email+" ";
         JsonArrayRequest arrayRequest=new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -251,7 +251,7 @@ public class ProfileUpdateActivity extends AppCompatActivity implements Response
                 username2=obj.getString("username");
                 email2=obj.getString("email");
                 address2=obj.getString("address");
-                image="http://beezzserver.com/hasintha/travelingApp/registeruser/Images/"+obj.getString("image");
+                image="https://dev.chethiya-kusal.me/hasintha/travelingApp/registeruser/Images/"+obj.getString("image");
                 id=obj.getString("id");
             }
 
@@ -279,7 +279,7 @@ public class ProfileUpdateActivity extends AppCompatActivity implements Response
         final String password=passwordField.getText().toString();
 
         RequestQueue queue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/registeruser/update.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/registeruser/update.php";
 
         StringRequest request=new StringRequest(Request.Method.POST,url,this,this){
             protected Map<String, String> getParams() {

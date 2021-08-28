@@ -130,7 +130,7 @@ public class AnimeActivity extends AppCompatActivity  {
     public void loadreview(){
 
         RequestQueue requestQueue=Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/reviews/index.php?pid="+id+"";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/reviews/index.php?pid="+id+"";
         JsonArrayRequest request=new JsonArrayRequest(Request.Method.GET, url,null,
                 new Response.Listener<JSONArray>(){
 

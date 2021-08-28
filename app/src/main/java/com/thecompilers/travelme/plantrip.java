@@ -107,7 +107,7 @@ public class plantrip extends AppCompatActivity implements Response.Listener<Str
     //retriew data to autocomplete text view in plan trip activity
     public void loadLocation(){
         RequestQueue requestQueue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/plantrip/locations.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/plantrip/locations.php";
         JsonArrayRequest arrayRequest=new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -154,7 +154,7 @@ public class plantrip extends AppCompatActivity implements Response.Listener<Str
 
         if(!loc.equals("")){
             RequestQueue queue= Volley.newRequestQueue(this);
-            String url="http://beezzserver.com/hasintha/travelingApp/plantrip/insert.php";
+            String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/plantrip/insert.php";
 
             StringRequest request=new StringRequest(Request.Method.POST,url,this,this){
                 protected Map<String, String> getParams() {

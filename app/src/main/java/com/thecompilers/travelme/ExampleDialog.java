@@ -71,7 +71,7 @@ public class ExampleDialog extends AppCompatDialogFragment {
         final String r=review;
         final String i=id+"";
         final RequestQueue requestQueue = Volley.newRequestQueue(getContext());
-        String url="http://beezzserver.com/hasintha/travelingApp/reviews/insert.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/reviews/insert.php";
 
         StringRequest  request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override

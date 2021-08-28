@@ -148,7 +148,7 @@ public class challengeAdapter extends RecyclerView.Adapter<challengeAdapter.MyVi
 
     public void updatelike(int id,int nolike){
         RequestQueue requestQueue= Volley.newRequestQueue(this.mContext);
-        String url="http://beezzserver.com/hasintha/travelingApp/challenge/updatelike.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/challenge/updatelike.php";
         final String cid=id+"";
         final String nolikes=nolike+"";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {

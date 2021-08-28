@@ -80,14 +80,10 @@
                             android:layout_height="wrap_content"
                             android:text="Anuradhapura"
                             android:gravity="center"
-
                             />
-
                     </LinearLayout>
-                    
-                    
-                    
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -517,7 +513,75 @@
 
                 </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:id="@+id/jaffna"
+                        android:onClick="viewPlcae"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/jaffna">
 
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jaffna"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+                    <LinearLayout
+                        android:id="@+id/trinco"
+                        android:onClick="viewPlcae"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/trincomalee">
+
+                        </ImageView>
+                        <TextView
+                            android:background="#FFEB3B"
+                            android:padding="1dp"
+                            android:textColor="@color/blackcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Trincomalee"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
             </GridLayout>
