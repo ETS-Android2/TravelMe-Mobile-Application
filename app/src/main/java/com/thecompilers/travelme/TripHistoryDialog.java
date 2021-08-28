@@ -110,7 +110,7 @@ public class TripHistoryDialog extends AppCompatDialogFragment implements Respon
 
     public void updateTrip(){
         RequestQueue requestQueue= Volley.newRequestQueue(getContext());
-        String url="http://beezzserver.com/hasintha/travelingApp/plantrip/update.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/plantrip/update.php";
         final String tid=id+"";
         final String tnote=tripnote.getText().toString();
         final String tplace=addVPlaces;

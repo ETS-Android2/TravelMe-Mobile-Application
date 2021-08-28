@@ -88,7 +88,7 @@ public class MyPlanActicity extends AppCompatActivity {
     public void loadTrips(){
 
         RequestQueue requestQueue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/plantrip/index.php?username="+username+" ";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/plantrip/index.php?username="+username+" ";
         JsonArrayRequest request=new JsonArrayRequest(Request.Method.GET, url,null,
                 new Response.Listener<JSONArray>(){
 

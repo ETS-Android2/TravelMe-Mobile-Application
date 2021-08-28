@@ -54,7 +54,7 @@ public class MainActivity extends Activity implements Response.Listener<String>,
         final String passwordF=password.getText().toString();
 
         RequestQueue queue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/registeruser/index.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/registeruser/index.php";
 
         StringRequest request=new StringRequest(Request.Method.POST,url,this,this){
             protected Map<String, String> getParams() {

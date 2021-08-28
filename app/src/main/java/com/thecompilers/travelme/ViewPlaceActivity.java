@@ -29,7 +29,7 @@ public class ViewPlaceActivity extends AppCompatActivity {
     RecyclerView placceListView;
     ImageView homefromplace;
     String location;
-    private List<Anime> lstAnime = new ArrayList<>();
+    List<Anime> lstAnime = new ArrayList<>();
 
 
     @Override
@@ -65,7 +65,7 @@ public class ViewPlaceActivity extends AppCompatActivity {
 
     public void loadsession(){
         RequestQueue requestQueue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/locationPlace/index.php?location="+location+"";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/locationPlace/index.php?location="+location+"";
 
         JsonArrayRequest request=new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
@@ -90,14 +90,12 @@ public class ViewPlaceActivity extends AppCompatActivity {
             for(int i=0;i<response.length();i++){
                 JSONObject obj=response.getJSONObject(i);
                 Anime anime=new Anime();
-
                 anime.setId(obj.getInt("id"));
                 anime.setPlacename(obj.getString("placename"));
                 anime.setRating(obj.getString("rating"));
                 anime.setDescription(obj.getString("description"));
-                anime.setImage_url(obj.getString("urlimage"));
+                anime.setImage_url("https://dev.chethiya-kusal.me/hasintha/travelingApp/imagesdatabase/"+obj.getString("urlimage"));
                 anime.setLocation(obj.getString("location"));
-
                 lstAnime.add(anime);
                 //setRvadapter(lstAnime);
                /* HashMap<String,String> map=new HashMap<>();
@@ -113,7 +111,6 @@ public class ViewPlaceActivity extends AppCompatActivity {
 
             }
             RvAdapter myAdapter = new RvAdapter(this,lstAnime) ;
-            new LinearLayoutManager(this).setOrientation(LinearLayoutManager.VERTICAL);
             placceListView.setLayoutManager(new LinearLayoutManager(this));
             placceListView.setAdapter(myAdapter);
 

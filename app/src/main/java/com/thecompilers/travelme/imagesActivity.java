@@ -41,7 +41,7 @@ public class imagesActivity extends AppCompatActivity {
 //laod images from database
     public void fetchImages(){
         RequestQueue requestQueue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/images/retriewimages.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/images/retriewimages.php";
 
         JsonArrayRequest request=new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
@@ -65,7 +65,7 @@ public class imagesActivity extends AppCompatActivity {
                 ModelImage modelImage=new ModelImage();
                 modelImage.setId(obj.getInt("id")+"");
                 modelImage.setLocation(obj.getString("placename"));
-                modelImage.setImageurl("http://beezzserver.com/hasintha/travelingApp/imagesdatabase/"+obj.getString("imagesurl"));
+                modelImage.setImageurl("https://dev.chethiya-kusal.me/hasintha/travelingApp/imagesdatabase/"+obj.getString("imagesurl"));
                 imageList.add(modelImage);
 
 

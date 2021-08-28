@@ -21,7 +21,11 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:text="Anuradhapura"
+        android:textColor="@color/blackcolor"
+        android:background="@color/whitecolor"
         android:textSize="14sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         tools:ignore="RtlCompat" />
 
 

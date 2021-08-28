@@ -7,8 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".imagesActivity">
 
+    <SearchView
+        android:id="@+id/search_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/mapsearch"
+        android:backgroundTint="#E3E9ED"
+        android:elevation="1dp"
+        android:gravity="center"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search.." />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/search_images"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/recyclerImageView"/>

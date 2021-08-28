@@ -97,7 +97,7 @@ public class ChallengeCommentDialog extends AppCompatDialogFragment implements R
 
     public void updateTrip(){
         RequestQueue requestQueue= Volley.newRequestQueue(getContext());
-        String url="http://beezzserver.com/hasintha/travelingApp/challenge/updatecomment.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/challenge/updatecomment.php";
         final String cid=id+"";
         final String ccomments=finalcoment+","+comments;
         StringRequest request=new StringRequest(Request.Method.POST, url, this,this){

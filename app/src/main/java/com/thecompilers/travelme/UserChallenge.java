@@ -53,7 +53,7 @@ public class UserChallenge extends AppCompatActivity {
 
     public void reload(){
         RequestQueue queue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/challenge/index.php";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/challenge/index.php";
 
         JsonArrayRequest request=new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
@@ -101,7 +101,7 @@ public class UserChallenge extends AppCompatActivity {
     public void updatePhoto(String username){
 
         RequestQueue queue= Volley.newRequestQueue(this);
-        String url="http://beezzserver.com/hasintha/travelingApp/registeruser/indexphotoUrl.php?username="+username+"";
+        String url="https://dev.chethiya-kusal.me/hasintha/travelingApp/registeruser/indexphotoUrl.php?username="+username+"";
 
         JsonArrayRequest request=new JsonArrayRequest(Request.Method.GET, url, null ,new Response.Listener<JSONArray>() {
 
